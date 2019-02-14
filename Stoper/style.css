@@ -1,0 +1,81 @@
+body {
+    background: url(https://picsum.photos/3264/1832?image=960);
+    background-size: cover;
+    color: white;
+}
+
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#wrapper {
+    text-align: center;
+}
+
+#time {
+    text-align: center;
+    font-size: calc(3em + 1vw);
+    padding-top: 20px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.control {
+    background-color: #4483ba;
+    height: 15vh;
+    width: 15vh;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 2.5vh;
+    padding: 30% 0;
+    margin-right: 10px;
+    transform: scale(1);
+}
+
+#controlsContainer {
+    justify-content: center;
+    margin: 10px;
+}
+
+
+.control:active {
+    color: #87642f;
+    background-color: white;
+}
+
+.control:hover {
+    transition: all .5s;
+    transform-origin: center;
+    transform: scale(.95);
+    box-shadow: 0 0 3px #000;
+}
+
+#laps {
+    height: 35vh;
+    margin: 15px;
+    overflow-y: scroll;
+}
+
+.lap {
+    height: 40px;
+    border-bottom: 1px solid white;
+    margin: 15px;
+}
+
+.laptimetitle {
+    font-size: 1em;
+    float: left;
+}
+
+.laptime {
+    font-size: 1.2em;
+    float: right;
+}
