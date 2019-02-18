@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,12 +12,12 @@
 </head>
 
 <body>
-    <header id="header">
+    <section id="header">
         <div id="start">
             <div class="navicon"><i class="fa fa-bars"></i></div>
             <nav class="nav">
                 <ul>
-                    <li><a href="#start" class="smooth">Start</a></li>
+                    <li><a href="#header" class="smooth">Start</a></li>
                     <li><a href="#about" class="smooth">About me</a></li>
                     <li><a href="#resume" class="smooth">Resume</a></li>
                     <li><a href="#portfolio" class="smooth">Portfolio</a></li>
@@ -26,17 +26,17 @@
             </nav>
         </div>
         <div class="starttext">
-            <h2>May I introduce myself?</h2>
+            <h2 id="welcome"></h2>
             <p>Front-end developer</p>
             <button type="button" class="button"><a href="#about" class="smooth">Go ahead</a></button>
         </div>
-    </header>
+    </section>
     <div id="wrapper">
         <section id="about" class="section">
             <h2>About me</h2>
             <h3>Natalia Suszyńska</h3>
             <article>
-                <p>Od kilku miesięcy uczę się zagadnień z front-end'u, które każdego dnia pogłębiam. Jest to moje hobby, które chciałabym połączyć z pracą zawodową. Jak narazie poznałam HTML5 i CSS3 oraz JavaScript, którego wciąż się uczę korzystając z biblioteki jQuery. Swoje projekty udostępniam na GitHubie, aby oswoić się z pracą w git. Moim kolejnym krokiem jest poznanie Node.js oraz dalsza nauka Vanilla JS. Ukończyłam kurs na Udemy: Ultimate Web Developer Course Build 10 Websites from Scratch oraz posiadam certyfikat z freeCodeCamp: Responsive Web Design. Obecnie jestem w trakcie kursu The Complete 2019 Web Development Course - Build 15 Projects na Udemy. Kiedy nie programuję, zajmuję się szyciem (można mnie znaleźć na facebooku pod nazwą Suszyje). Jeżdżę też na snowboardzie i uwielbiam popołudniowe podróże rowerowe.</p>
+                <p>Od kilku miesięcy uczę się zagadnień z front-end'u, które każdego dnia pogłębiam. Jest to moje hobby, które chciałabym połączyć z pracą zawodową. Jak narazie poznałam HTML5 i CSS3 oraz JavaScript, którego wciąż się uczę korzystając z biblioteki jQuery. Swoje projekty udostępniam na GitHubie, aby oswoić się z pracą w git. Moim kolejnym krokiem jest poznanie frameworka React oraz dalsza nauka Vanilla JS. Ukończyłam kurs na Udemy: Ultimate Web Developer Course Build 10 Websites from Scratch oraz posiadam certyfikat z freeCodeCamp: Responsive Web Design. Obecnie jestem w trakcie kursu The Complete 2019 Web Development Course - Build 15 Projects na Udemy. Kiedy nie programuję, zajmuję się szyciem (można mnie znaleźć na facebooku pod nazwą Suszyje). Jeżdżę też na snowboardzie i uwielbiam popołudniowe podróże rowerowe.</p>
             </article>
             <article class="myskills">
                 <h3>My skills</h3>
@@ -62,11 +62,13 @@
                                 <h4>2017 - 2018</h4>
                                 <h5>Politechnika Gdańska</h5>
                                 <p>Kontynuacja oraz ukończenie studiów magisterskich międzywydziałowych z wynikiem dobry plus na kierunku Inżynieria Biomedyczna, wydział Fizyki Technicznej i Matematyki Stosowanej oraz Elektroniki, Telekomunikacji i Informatyki</p>
+                                <p>Temat pracy magisterskiej: Analiza parametrów osłonnych przed promieniowaniem beta wybranych materiałów</p>
                             </li>
                             <li>
                                 <h4>2013 - 2017</h4>
                                 <h5>Politechnika Gdańska</h5>
                                 <p>Uzyskany tytuł inżyniera na kierunku Inżynieria Biomedyczna</p>
+                                <p>Temat pracy inżynierskiej: Obliczenia parametrów mateiałów absorbujących wysokoenergetyczne wiązki cząstek naładowanych wykorzystywanych w medycyine i ochronie radiologicznej.</p>
                             </li>
                             <li>
                                 <h4>2010-2013</h4>
@@ -76,7 +78,7 @@
                         </ul>
                     </div>
                     <div id="jezyki">
-                        <h3>Języki</h3>
+                        <h3><i class="fas fa-globe-europe"></i>Języki</h3>
                         <ul>
                             <p><i class="fas fa-battery-three-quarters"></i>Angielski</p>
                             <p><i class="fas fa-battery-half"></i>Rosyjski</p>
@@ -85,29 +87,35 @@
                     </div>
                 </div>
                 <div id="rightside">
-                    <h3><i class="fas fa-briefcase"></i>Doświadczenie</h3>
-                    <ul>
-                        <li>
-                            <h4>2013 - teraz</h4>
-                            <h5>Korepetytor z matematyki</h5>
-                            <p>Nauka uczniów na poziomie podstawowym, gimnazjalnym oraz licealnym.</p>
-                        </li>
-                        <li>
-                            <h4>2015, 2016, 2017</h4>
-                            <h5>Kelnerka</h5>
-                            <p>Praca sezonowa podczas wakacji studenckich jako kelnerka w m.in. Hilton, Grand Hotel, Dwór Oliwski</p>
-                        </li>
-                        <li>
-                            <h4>lipiec 2014</h4>
-                            <h5>Przewodnik</h5>
-                            <p>Wielojęzyczny przewodnik po zabytkach miasta Krakowa w połączeniu z kierowcą ekologicznych pojazdów akumulatorowych Melex.</p>
-                        </li>
-                        <li>
-                            <h4>październik 2013</h4>
-                            <h5>Tłumacz</h5>
-                            <p>Tłumacz, opiekun grup, wolontariusz przy Międzynarodowym Zjeździe Akordeonistów.</p>
-                        </li>
-                    </ul>
+                    <div id="experiance">
+                        <h3><i class="fas fa-briefcase"></i>Doświadczenie</h3>
+                        <ul>
+                            <li>
+                                <h4>2017</h4>
+                                <h5>Praktyka studencka</h5>
+                                <p>Odbycie tygodniowych praktyk studenckich w Instytucie Oceanologi Polskiej Akademii Nauk. W ramach praktyk odbyto rejs na Bałtyku w celu przeprowadzenia badań na temat: "Współczesne zmiany ekosystemów u brzegów mórz szelfowych"</p>
+                            </li>
+                            <li>
+                                <h4>2016</h4>
+                                <h5>Praktyka studencka</h5>
+                                <p>Odbycie 3-tygodniowych praktyk studenckich w Instytucie Fizyki Jądrowej - Centrum Cyklotronowe Bronowice w Krakowie. Wprowadzenie do pracy jako Fizyk Medyczny i zaznajomienie się z każdym działem Instytutu.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="skills">
+                        <h3><i class="fas fa-tools"></i>Umiejętności</h3>
+                        <ul>
+                            <li>
+                                <h4>2013 - 2018</h4>
+                                <h5>Nabyte w trakcie studiów</h5>
+                                <p>Podstawowa znajomość języków programowania: <em>C++, Matlab, R</em> oraz podstawowa obsługa baz danych.
+                                    <p>Praca przy urządzeniach elektronicznych, obsługa przyrządów umożliwiających przeprowadzenie pomiarów, znajomość podstaw elektroniki, układów elektronicznych.</p>
+                                    <p>Przedmioty informatyczne umożliwiające praktyczne zastosowanie wiedzy:
+                                        <br><small>Podstawy Programowania, Programowanie w Matlabie, Podstawy Bioinformatyki, Telematyka Medyczna, w ramach których wykonano projekty, m.in: gra usprawniająca mobilność osób starszych z wykorzystaniem maty do tańczenia, implementacja projektu wykorzystującego algorytm stosowany w Bioinformatyce</small></p>
+                                    <p>Znajomość obsługi programów dzięki praktycznej nauce przy wykorzystaniu podczas tworzenia projektów: <em>Fusion360, A9Cad, Molpro, pakiet Office</em></p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -116,9 +124,14 @@
             <article>
                 <h4>Organizacje studenckie i osiągnięcia:</h4>
                 <p>Wiceprezes koła naukowego BioPhoton w roku akademickim 2017-2018.</p>
-                <p>Uzyskanie 3 miejsca podczas konkursu organizowaneggo na konferencji "Fizyka dla Medyka" z zespołowym projektem "Tablica interaktywna do terapii dzieci ze spektrum autyzmu".</p>
+                <p>Uzyskanie 3 miejsca podczas konkursu organizowanego na konferencji "Fizyka dla Medyka" z zespołowym projektem "Tablica interaktywna do terapii dzieci ze spektrum autyzmu".</p>
                 <p>Były członek koła studenckiego ESTIEM</p>
                 <p>Aktywny członek Sekcji Narciarsko-Snowbordowej Politechniki Gdańskiej. Wielokrotne sukcesy drużynowe oraz indywidualne podczas Akademickich Mistrzostw Polski w Snowboardzie.</p>
+                <h4>Doświadczenie w ramach prac sezonowych:</h4>
+                <p>Korepetytorka matematyki.</p>
+                <p>Kelnerka w czasie wakacji studenckich w trójmiejskich hotelach, m.in. Hilton, Grand Hotel, Dwór Oliwski.</p>
+                <p>wielojęzyczny przewodnik po zabydkach miasta Krakowa.</p>
+                <p>tłumacz, opiekun grup, wolontariusz przy Międzynarodowym Zjeździe Akordeonistów.</p>
                 <h4>Instruktor snowboardu</h4>
                 <h4>Prawo jazdy kat. B</h4>
             </article>

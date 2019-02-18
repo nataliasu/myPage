@@ -5,10 +5,9 @@ body {
     color: #95a5a6;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    background: url(images/qbkls.png) fixed;
 }
 
-header {
+#header {
     background: url(https://picsum.photos/5184/3456?image=958) center center fixed;
     background-size: cover;
     opacity: 0.8;
@@ -28,6 +27,10 @@ header {
     left: 0;
     background-color: white;
     z-index: 100;
+}
+
+#wrapper {
+    background: url(images/qbkls.png);
 }
 
 .navicon {
@@ -194,7 +197,6 @@ h2 {
     margin: 0;
     padding: 0;
     background-color: transparent;
-    margin-bottom: 5vh;
 }
 
 .rows {
@@ -228,6 +230,7 @@ h2 {
     text-align: left;
     color: rgba(53, 53, 53, 0.594);
     font-weight: 400;
+    margin-top: 5vh;
 }
 
 #resume h4 {
@@ -259,7 +262,7 @@ h2 {
     font-size: 1.5em
 }
 
-#jezyki i {
+#jezyki ul i {
     font-size: 3em;
 }
 
