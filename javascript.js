@@ -49,3 +49,26 @@ $(function () {
         }
     });
 });
+
+var string = " May I introduce myself?"
+var array = string.split("");
+var i = 0;
+
+Next = function () {
+    i++;
+    if (i > (array.length - 1)) {
+        return
+    }
+    setTimeout(Slide, 50);
+}
+
+var x = document.getElementById('welcome');
+
+function Slide() {
+    var sp = document.createElement('span');
+    sp.setAttribute('class', 'fadein');
+    sp.appendChild(document.createTextNode(array[i]));
+    x.appendChild(sp);
+    setTimeout('Next()', 50);
+}
+Next();
