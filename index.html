@@ -13,7 +13,7 @@
 
 <body>
     <section id="header">
-        <div id="start">
+        <div class="start">
             <div class="navicon"><i class="fa fa-bars"></i></div>
             <nav class="nav">
                 <ul>
@@ -31,30 +31,41 @@
             <button type="button" class="button"><a href="#about" class="smooth">Go ahead</a></button>
         </div>
     </section>
-    <div id="wrapper">
-        <section id="about" class="section">
+    <div class="wrapper">
+        <section id="about" class="section about">
             <h2>About me</h2>
             <h3>Natalia Suszyńska</h3>
             <article>
-                <p>Od kilku miesięcy uczę się zagadnień z front-end'u, które każdego dnia pogłębiam. Jest to moje hobby, które chciałabym połączyć z pracą zawodową. Jak narazie poznałam HTML5 i CSS3 oraz JavaScript, którego wciąż się uczę korzystając z biblioteki jQuery. Swoje projekty udostępniam na GitHubie, aby oswoić się z pracą w git. Moim kolejnym krokiem jest poznanie frameworka React oraz dalsza nauka Vanilla JS. Ukończyłam kurs na Udemy: Ultimate Web Developer Course Build 10 Websites from Scratch oraz posiadam certyfikat z freeCodeCamp: Responsive Web Design. Obecnie jestem w trakcie kursu The Complete 2019 Web Development Course - Build 15 Projects na Udemy. Kiedy nie programuję, zajmuję się szyciem (można mnie znaleźć na facebooku pod nazwą Suszyje). Jeżdżę też na snowboardzie i uwielbiam popołudniowe podróże rowerowe.</p>
+                <p>Od kilku miesięcy uczę się zagadnień z front-end'u, które każdego dnia
+                    pogłębiam. Jest to moje hobby, które chciałabym połączyć z pracą zawodową.
+                    Jak narazie poznałam HTML5 i CSS3 oraz JavaScript. Swoje projekty udostępniam na
+                    GitHubie, aby oswoić się z pracą w git. Obecnie zajmuję się nauką frameworka Angular,
+                    w ramach której tworzę aplikację Clockify. Ukończyłam kurs
+                    na Udemy: Ultimate Web Developer Course Build 10 Websites from Scratch,
+                    Angular 8 (formerly Angular 2) - The Complete Guide oraz częściowo The Complete 2019 Web Development
+                    Course - Build 15 Projects. Posiadam certyfikat z freeCodeCamp: Responsive Web Design. Kiedy nie programuję,
+                    zajmuję się szyciem (można mnie znaleźć na facebooku pod nazwą Suszyje).
+                    Jeżdżę też na snowboardzie i uwielbiam popołudniowe podróże rowerowe.</p>
             </article>
             <article class="myskills">
                 <h3>My skills</h3>
                 <ul>
-                    <li><img src="images/html.png"></li>
-                    <li><img src="images/css.png"></li>
-                    <li><img src="images/javascript.png" id="javascript"></li>
-                    <li><img src="images/jquery.png"></li>
-                    <li><img src="images/git.png"></li>
-                    <li></li>
+                    <li><img src="images/html.png" class="logo" alt="html"></li>
+                    <li><img src="images/css.png" class="logo" alt="css"></li>
+                    <li><img src="images/javascript.png" class="logo" alt="javascript"></li>
+                    <li><img src="images/jquery.png" class="logo" alt="jquery"></li>
+                    <li><img src="images/angular.png" class="logo" alt="angular"></li>
+                    <li><img src="images/bootstrap.png" class="logo" alt="bootstrap"></li>
+                    <li><img src="images/sass.png" class="logo" alt="sass"></li>
+                    <li><img src="images/git.png" class="logo" alt="git"></li>
                 </ul>
             </article>
         </section>
-        <section id="resume" class="section">
+        <section id="resume" class="section resume">
             <h2>Resume</h2>
-            <p id="more">More about my past</p>
+            <p class="more">More about my past</p>
             <div class="rows">
-                <div id="leftside">
+                <div class="leftside">
                     <div id="edu">
                         <h3><i class="fas fa-university"></i>Edukacja</h3>
                         <ul>
@@ -77,7 +88,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div id="jezyki">
+                    <div class="lang">
                         <h3><i class="fas fa-globe-europe"></i>Języki</h3>
                         <ul>
                             <p><i class="fas fa-battery-full"></i>Angielski</p>
@@ -86,8 +97,8 @@
                         </ul>
                     </div>
                 </div>
-                <div id="rightside">
-                    <div id="experiance">
+                <div class="rightside">
+                    <div class="experiance">
                         <h3><i class="fas fa-briefcase"></i>Doświadczenie</h3>
                         <ul>
                             <li>
@@ -102,7 +113,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div id="skills">
+                    <div class="skills">
                         <h3><i class="fas fa-tools"></i>Umiejętności</h3>
                         <ul>
                             <li>
@@ -119,7 +130,7 @@
                 </div>
             </div>
         </section>
-        <div id="dodatkowe">
+        <div class="additional">
             <h3>Informacje dodatkowe</h3>
             <article>
                 <h4>Organizacje studenckie i osiągnięcia:</h4>
@@ -138,7 +149,7 @@
         </div>
 
 
-        <section id="portfolio" class="section">
+        <section id="portfolio" class="section portfolio">
             <h2>Portfolio</h2>
             <article>
                 <a href="CourseWebsite/index.html" target="_blank">
@@ -161,9 +172,19 @@
                         </div>
                     </div>
                 </a>
+                <a href="MemoryGame/index.html" target="_blank">
+                    <div class="hvrbox">
+                        <img src="images/memo.png" alt="Project 3" class="hvrbox-layer_bottom">
+                        <div class="hvrbox-layer_top hvrbox-layer_slideright">
+                            <div class="hvrbox-text">Memory Game executed to learn Object Oriented Programing
+                                <div class="hvrbox-text_mobile">Tap again to go further</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
                 <a href="DrawingApp/index.html" target="_blank">
                     <div class="hvrbox">
-                        <img src="images/paint.png" alt="Project 3" class="hvrbox-layer_bottom">
+                        <img src="images/paint.png" alt="Project 4" class="hvrbox-layer_bottom">
                         <div class="hvrbox-layer_top hvrbox-layer_slideright">
                             <div class="hvrbox-text">A drawing App imitating a well-known Paint enabling you to save your image in a local browser storage. Not touch friendly. Executed in jQuery.
                                 <div class="hvrbox-text_mobile">Tap again to go further</div>
@@ -173,9 +194,19 @@
                 </a>
                 <a href="FruitGame/index.html" target="_blank">
                     <div class="hvrbox">
-                        <img src="images/fruits.png" alt="Project 4" class="hvrbox-layer_bottom">
+                        <img src="images/fruits.png" alt="Project 5" class="hvrbox-layer_bottom">
                         <div class="hvrbox-layer_top hvrbox-layer_slideright">
                             <div class="hvrbox-text">Imitating the Fruit Ninja, this game gives you 3 lives while you need to catch the falling fruits. Not touch-friendly. Executed in jQuery.
+                                <div class="hvrbox-text_mobile">Tap again to go further</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="MathsGame/index.html" target="_blank">
+                    <div class="hvrbox">
+                        <img src="images/maths.png" alt="Project 6" class="hvrbox-layer_bottom">
+                        <div class="hvrbox-layer_top hvrbox-layer_slideright">
+                            <div class="hvrbox-text">My first game, simple Math equasions.
                                 <div class="hvrbox-text_mobile">Tap again to go further</div>
                             </div>
                         </div>
@@ -184,7 +215,7 @@
             </article>
             <button type="button" class="button"><a href="https://codepen.io/nataliasu/" target="_blank">View more projects</a></button>
         </section>
-        <section id="contact" class="section">
+        <section id="contact" class="section contact">
             <h2>Get in touch!</h2>
             <div>
                 <a href="https://www.facebook.com/natalia.su14" class="contact-details" target="_blank"><i class="fab fa-facebook-square"></i></a>
@@ -195,7 +226,7 @@
             </div>
         </section>
 
-        <footer>&copy; Created by Natalia Suszyńska - 2019</footer>
+        <footer class="footer">&copy; Created by Natalia Suszyńska - 2019</footer>
 
     </div>
 

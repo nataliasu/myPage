@@ -26,7 +26,7 @@ body {
     background: rgba(219, 219, 219, 0.336);
 }
 
-#start {
+.start {
     margin: 0 auto;
     height: 50px;
     width: 100%;
@@ -38,7 +38,7 @@ body {
     z-index: 100;
 }
 
-#wrapper {
+.wrapper {
     background: url(images/qbkls.png);
 }
 
@@ -51,17 +51,17 @@ body {
     float: right;
 }
 
-#start nav {
+.start .nav {
     float: right;
     z-index: 100;
 }
 
-#start nav ul {
+.start .nav ul {
     margin: 0;
     z-index: 100;
 }
 
-#start nav li {
+.start .nav li {
     float: left;
     list-style-type: none;
 }
@@ -137,15 +137,15 @@ h2 {
     text-transform: uppercase;
 }
 
-#about {
-    height: 100vh;
+.about {
+    /*height: 100vh;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#about h3 {
+.about h3 {
     text-transform: uppercase;
     color: #a8a8a8;
     border-bottom: 1px solid rgba(164, 162, 162, 0.74);
@@ -154,7 +154,7 @@ h2 {
     margin: 0 auto;
 }
 
-#about article p {
+.about article p {
     width: 70vw;
     margin: 0 auto;
     padding: 10px;
@@ -183,24 +183,19 @@ h2 {
 
 .myskills ul li {
     list-style: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    flex-basis: 25%;
 }
 
-.myskills img {
+.logo {
     width: 100px;
 }
 
-#javascript {
-    padding-top: 20px;
-    height: 80px;
-    width: 70px;
-}
-
-#resume h2 {
+.resume h2 {
     margin-bottom: 5px;
 }
 
-#more {
+.more {
     text-transform: uppercase;
     font-size: 1em;
     margin: 0;
@@ -217,22 +212,22 @@ h2 {
     justify-content: space-around;
 }
 
-#resume ul {
+.resume ul {
     list-style: none;
     padding: 0;
 }
 
-#leftside {
+.leftside {
     flex-basis: 42%;
 }
 
-#rightside {
+.rightside {
     flex-basis: 42%;
     align-items: stretch;
 }
 
-#resume h3,
-#dodatkowe h3 {
+.resume h3,
+.additional h3 {
     text-transform: uppercase;
     background-color: rgba(209, 209, 209, 0.594);
     padding: 20px;
@@ -242,7 +237,7 @@ h2 {
     margin-top: 5vh;
 }
 
-#resume h4 {
+.resume h4 {
     font-weight: 300;
     color: #5a5a5a;
     font-size: 0.8em;
@@ -250,8 +245,8 @@ h2 {
     border-top: 1px solid rgba(117, 117, 117, 0.594);
 }
 
-#resume h5,
-#dodatkowe h4 {
+.resume h5,
+.dodatkowe h4 {
     text-transform: uppercase;
     font-weight: 400;
     color: #000000;
@@ -259,23 +254,23 @@ h2 {
     font-size: 1.2em;
 }
 
-#resume p,
-#dodatkowe p {
+.resume p,
+.dodatkowe p {
     font-weight: 300;
     color: #5a5a5a;
     font-size: 1em;
 }
 
-#resume i {
+.resume i {
     padding-right: 10px;
     font-size: 1.5em
 }
 
-#jezyki ul i {
+.lang ul i {
     font-size: 3em;
 }
 
-#jezyki p {
+.lang p {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -286,7 +281,7 @@ h2 {
     font-size: 1em;
 }
 
-#dodatkowe {
+.additional {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -297,7 +292,7 @@ h2 {
     align-items: center;
 }
 
-#dodatkowe h4 {
+.additional h4 {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -311,7 +306,7 @@ h2 {
     margin-left: 10%;
 }
 
-#portfolio article {
+.portfolio article {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -419,11 +414,11 @@ h2 {
     transform: translateX(0);
 }
 
-#portfolio .button {
+.portfolio .button {
     margin-top: 5vh;
 }
 
-#contact {
+.contact {
     height: 100vh;
     display: flex;
     display: -webkit-box;
@@ -434,13 +429,13 @@ h2 {
     justify-content: center;
 }
 
-#contact i {
+.contact i {
     font-size: 5em;
     padding: 5vw;
     color: #666666;
 }
 
-footer {
+.footer {
     background-color: #383838;
     padding: 5vh;
 }
@@ -453,7 +448,7 @@ footer {
 /*RESPONISVNESS*/
 
 @media (hover: none) {
-    header {
+    #header {
         background-attachment: initial;
     }
 }
@@ -463,17 +458,17 @@ footer {
         margin-top: 5vh;
     }
 
-    #contact i {
+    .contact i {
         font-size: 4em;
         padding: 4.5vw;
     }
 
-    #start .navicon {
+    .start .navicon {
         display: block;
         color: #2d2d2d;
     }
 
-    #start nav {
+    .start .nav {
         display: none;
         width: 100%;
         background-color: white;
@@ -483,27 +478,21 @@ footer {
         color: rgb(112, 112, 112);
     }
 
-    #start nav ul li {
+    .start .nav ul li {
         width: 100%;
     }
 
-    #about {
+    .about {
         height: auto;
     }
 
-    #about article p {
+    .about article p {
         width: 90vw;
     }
 
-    .myskills img {
+    .logo {
         width: 60px;
         padding: 10px;
-    }
-
-    #javascript {
-        padding-top: 20px;
-        height: 55px;
-        width: 50px;
     }
 
     .rows {
@@ -512,14 +501,14 @@ footer {
         align-items: center;
     }
 
-    #leftside,
-    #rightside {
+    .leftside,
+    .rightside {
         width: 80vw;
         align-self: center;
     }
 
-    #resume h3,
-    #dodatkowe h3 {
+    .resume h3,
+    .additional h3 {
         text-align: center;
     }
 
@@ -533,11 +522,11 @@ footer {
         font-size: 0.7em;
     }
 
-    #contact {
+    .contact {
         height: 70vh;
     }
 
-    #contact i {
+    .contact i {
         font-size: 3em;
         padding: 4vw;
     }
@@ -551,7 +540,7 @@ footer {
 }
 
 @media screen and (max-width: 350px) {
-    #start .navicon {
+    .start .navicon {
         margin-left: 75vw;
     }
 
