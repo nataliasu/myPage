@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-board {
+    width: 530px;
+    height: 425px;
+    border: 2px solid #ddd;
+    position: relative;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.game-tile {
+    position: absolute;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    background: #dfff7f url(images/que.png) center center no-repeat;
+}
+
+/*fruit 5 i 7 do wymiany - kiwi i melon*/
+
+.game-tile:hover {
+    background-color: #c5ff19;
+}
+
+.game-score {
+    text-align: center;
+}
+
+button.button {
+    padding: 1em 3em;
+    background: #3dffb4;
+    color: ;
+    border: 0;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+}
+
+button.button:hover {
+    background-color: #00db87;
+}
+
+h3 {
+    margin: 30px auto 20px auto;
+    text-align: center;
+}
+
+ul li {
+    position: relative;
+    padding: 0 0 10px 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: '';
+    position: absolute;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 4px);
+    left: -20px;
+    transform: translateY(-50%) rotate(-45deg);
+}
